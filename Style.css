@@ -1,0 +1,75 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { 
+    background-color: skyblue; 
+    height: 100vh; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+.header span { color: red; font-weight: bold; }
+
+.btn-container {
+    height: 100px; /* Buttons ke liye jagah */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* ... baki purana code ... */
+
+.hidden-header {
+    display: none; /* Shuruat mein sab chhupa rahega */
+}
+
+.yes-btn {
+    width: 80px; height: 50px;
+    background: #27ae60; color: white;
+    border: none; border-radius: 10px;
+    cursor: pointer; font-weight: bold;
+    z-index: 10;
+    position: relative; /* Ye apni jagah se nahi hilega */
+}
+
+.no-btn1 {
+    width: 80px; height: 50px;
+    background: #ff4d4d; color: white;
+    border: none; border-radius: 10px;
+    cursor: pointer; font-weight: bold;
+    position: relative; 
+    transition: 0.1s ease;
+    z-index: 10;
+}
+/* Existing CSS mein ye add kar dein agar nahi hai */
+#love-page h1 {
+    animation: heartbeat 1.0s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
